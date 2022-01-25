@@ -32,7 +32,7 @@
 
     ?>
 
-    <span> <?php if( ( strlen($name) > 3 ) && ( ( strpos( $mail, "." ) ) && ( strpos( $mail, "@" ) ) ) && ( is_numeric($age) ) ){ ?>
+    <span> <?php if( ( strlen($name) > 3 ) && ( ( strpos( $mail, "." ) !== false ) && ( strpos( $mail, "@" ) !== false ) ) && ( is_numeric($age) ) ){ ?>
 
                 Accesso riuscito
 

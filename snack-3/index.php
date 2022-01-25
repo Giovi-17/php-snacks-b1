@@ -22,37 +22,19 @@
 
     ?>
 
-    <span> 
-        
-        <?php for( $i = 0; $i < 15; $i++ ){ ?>
+    <?php while( count($num) < 15){ ?>
 
-            <?php $cNum = rand( 1, 15 ); ?>
+        <?php $cNum = rand( 1, 15 ); ?>
 
-                <?php if( !in_array( $cNum, $num ) ){ ?>
+        <?php if( !in_array( $cNum, $num ) ){ ?>
 
-                    <?php $num[] = $cNum; ?>
-
-                    <div>
-  
-                        <?php echo $num[$i]; ?>
-
-                    </div>
-
-                <?php } else{ ?>
-
-                    <?php 
-                    
-                        $i--;
-                    
-                    ?>    
-
-                <?php } ?>
-                    
-                
+            <?php $num[] = $cNum; ?>
 
         <?php } ?>
 
-    </span>
+    <?php } ?>
+
+    <?php var_dump($num); ?>
 
 </body>
 </html>

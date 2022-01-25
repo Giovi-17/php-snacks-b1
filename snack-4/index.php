@@ -29,11 +29,15 @@
 
         <?php for( $i = 0; $i < count($arrayLorem); $i++ ){ ?> 
     
-            <p>
+            <?php if(!empty($arrayLorem[$i])){ ?>
 
-                <?php echo $arrayLorem[$i]; ?>
+                <p>
 
-            </p>
+                    <?php echo trim($arrayLorem[$i]); ?>
+
+                </p>
+
+            <?php } ?>
 
         <?php }; ?>
     

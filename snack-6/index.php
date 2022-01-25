@@ -70,7 +70,6 @@
 
                 <?php $somma = 0; ?>
 
-                
                 <?php for( $j = 0; $j < count($alunno[$i]["voti"]); $j++ ){ ?>
 
                     <?php 
@@ -83,7 +82,7 @@
 
                 <?php } ?>
 
-                <?php echo $media ?>
+                <?php echo round($media, 1) ?>
         
             </span>
 
